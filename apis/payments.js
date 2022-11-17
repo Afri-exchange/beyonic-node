@@ -50,7 +50,7 @@ class Payments {
         return await request(options);
     }
 
-    async get() {
+    async list() {
         if(!this.auth) {
             throw new Error("No Authorization was provided")
         }
